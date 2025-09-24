@@ -1,0 +1,346 @@
+/* Global styles */
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100%;
+}
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000; /* solid black */
+  padding: 1rem 2rem;
+  color: #fff;
+  position: sticky; /* stays on top when scrolling */
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+/* Navbar links */
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.navbar a:hover {
+  color: #dfb52b; /* matches your button green */
+}
+
+/* Logo or brand name */
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #dfb52b;
+}
+
+
+/* Page container with background image */
+.page-container {
+  background-image: url('https://images.pexels.com/photos/38326/pexels-photo-38326.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Transparent form/card */
+.home-container > div {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 2rem 3rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  text-align: center;
+  color: #fff;
+  max-width: 400px;
+  width: 90%;
+}
+
+/* Buttons */
+.login-btn,
+.register-btn {
+  display: inline-block;
+  margin: 10px 5px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+/* Login button style */
+.login-btn {
+  background-color: #4f46e5;
+  color: #fff;
+}
+
+.login-btn:hover {
+  background-color: #6366f1;
+}
+
+/* Register button style */
+.register-btn {
+  background-color: #10b981;
+  color: #fff;
+}
+
+.register-btn:hover {
+  background-color: #34d399;
+}
+
+/* Headings and paragraph */
+.home-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.home-container p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #6366f1;
+}
+/* Full-page background for forms */
+.form-bg {
+  background-image: url('https://images.pexels.com/photos/38326/pexels-photo-38326.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Transparent card for forms */
+.form-container {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 2rem 3rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  width: 350px;
+  max-width: 90%;
+  color: #fff;
+  text-align: center;
+}
+
+/* Form inputs */
+.form-container input {
+  width: 100%;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+/* Form button */
+.form-container button {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  background-color: #4f46e5;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s ease;
+}
+
+.form-container button:hover {
+  background-color: #6366f1;
+}
+
+/* Form heading */
+.form-container h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* Form message */
+.form-container p {
+  margin-top: 15px;
+  color: #ffe;
+}
+footer {
+  padding: 1rem 2rem;
+  background: black;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  backdrop-filter: blur(5px); /* subtle blur effect */
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.3);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+footer a {
+  color: #fff; /* link color */
+  text-decoration: none;
+  margin: 0 5px;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #dfb52b;
+}
+/* Dashboard & general styling */
+/* Dashboard page container */
+.dashboard-container {
+  min-height: 100vh;
+  background: url('https://images.pexels.com/photos/38326/pexels-photo-38326.jpeg') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  font-family: 'Arial', sans-serif;
+  color: white;
+}
+
+/* Header */
+.dashboard-header {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.dashboard-header h1 {
+  font-size: 2rem;
+}
+
+.logout-btn {
+  padding: 0.5rem 1rem;
+  background-color: #dc3545;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background-color: #a71d2a;
+}
+
+/* Form section */
+.form-section {
+  width: 100%;
+  max-width: 700px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 2rem;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+}
+
+.form-section h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-family: cursive;
+}
+
+.form-section input,
+.form-section textarea {
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.form-section textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.form-section button {
+  width: 100%;
+  padding: 0.7rem;
+  background-color: #dfb52b;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.form-section button:hover {
+  background-color: #b18a0d;
+}
+
+/* Search section */
+.search-section input {
+  width: 100%;
+  max-width: 700px;
+  padding: 0.7rem;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 2rem;
+}
+
+/* Posts list */
+.posts-section {
+  width: 100%;
+  max-width: 700px;
+}
+
+.post-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.post-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.post-card p {
+  margin-bottom: 0.5rem;
+}
+
+.post-actions button {
+  margin-right: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.post-actions button:first-child {
+  background-color: #ffc107;
+  color: black;
+}
+
+.post-actions button:first-child:hover {
+  background-color: #e0a800;
+}
+
+.post-actions button:last-child {
+  background-color: #dc3545;
+  color: white;
+}
+
+.post-actions button:last-child:hover {
+  background-color: #a71d2a;
+}
