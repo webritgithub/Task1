@@ -1,16 +1,57 @@
-# React + Vite
+# TASK1 - Scalable Web App with Authentication & Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a **frontend and backend web application** built as part of a Frontend Developer Intern assignment. It demonstrates a scalable structure with **authentication, dashboard features, and CRUD operations**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
 
-## React Compiler
+- [Features](#features)  
+- [Tech Stack](#tech-stack)  
+- [Project Structure](#project-structure)  
+- [Getting Started](#getting-started)  
+- [API Endpoints](#api-endpoints)  
+- [Security & Scalability](#security--scalability)  
+- [Future Improvements](#future-improvements)  
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- User **Signup / Login** with JWT authentication  
+- **Protected Routes** for authenticated users  
+- **Dashboard** with CRUD operations on sample entity (e.g., tasks or posts)  
+- **Profile page** to view/update user information  
+- Client-side & server-side form validation  
+- Responsive UI with **TailwindCSS**  
+
+---
+
+## Tech Stack
+
+**Frontend:** React.js, React Router v7, TailwindCSS  
+**Backend:** Node.js, Express.js  
+**Database:** MongoDB (or any preferred DB)  
+**Authentication:** JWT, bcrypt for password hashing  
+**API Testing:** Postman  
+
+---
+
+## Project Structure
+
+TASK1/
+─ src/
+ ─ api/
+  ─ api.js # Axios instance for API calls
+ ─ components/
+  ─ Navbar.jsx
+  ─ PrivateRoute.jsx
+ ─ pages/
+  ─ Login.jsx
+  ─ Register.jsx
+  ─ Dashboard.jsx
+  ─ Profile.jsx
+ ─ App.jsx
+ ─ main.jsx
+─ package.json
+─ README.md
